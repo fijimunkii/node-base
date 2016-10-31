@@ -1,0 +1,165 @@
+{
+  "name": "node-base",
+  "version": "0.0.0",
+  "dependencies": {
+    "jquery": "^2.2.2",
+    "numeral": "1.5.3",
+    "angular": "1.4.9",
+    "angular-animate": "1.4.8",
+    "angular-bluebird-promises": "~0.5.6",
+    "angular-bootstrap": "~0.14.3",
+    "angular-data-table": "~0.3.20",
+    "angular-file-upload": "~2.1.4",
+    "angular-growl-v2": "~0.7.5",
+    "angular-json-editor": "~0.1.8",
+    "angular-sanitize": "~1.4.7",
+    "angular-ui-router": "~0.2.15",
+    "animate.css": "~3.3.0",
+    "components-font-awesome": "~4.4.0",
+    "d3": "~3.5.6",
+    "json-editor": "~0.7.23",
+    "lodash": "~3.10.1",
+    "moment": "~2.10.6",
+    "ui-select": "angular-ui-select#~0.13.1",
+    "clues": "~3.3.11",
+    "d3-tip": "~0.6.7",
+    "colorbrewer": "~1.0.0",
+    "angular-moment": "~0.10.3",
+    "leaflet": "~0.7.7",
+    "leaflet.markercluster": "~0.4.0",
+    "angular-dotdotdot": "~0.0.2",
+    "bootstrap-sass": "~3.3.6",
+    "angularUtils-pagination": "angular-utils-pagination#~0.9.4",
+    "ngclipboard": "^1.1.0",
+    "angular-mousetrap-service": "^0.1.0",
+    "intro.js": "^2.0.0",
+    "ag-grid": "~5.1.2",
+    "Leaflet.fullscreen": "Leaflet/Leaflet.fullscreen#f5e76270ad40bb573bd11595f9069c3f15f8f286",
+    "angular-oboe": "*",
+    "ngprogress": "1.1.3",
+    "slick-carousel": "1.5.9",
+    "angular-slick-carousel": "3.1.4",
+    "angular-material": "1.0.7",
+    "angular-breadcrumb": "0.4.1",
+    "At.js": "jquery.atwho#~1.5.0",
+    "angular-xeditable": "~0.1.12",
+    "emojify.js": "~1.1.0",
+    "packery": "^2.1.1",
+    "angular-packery": "^1.0.4",
+    "angular-schema-form": "0.8.13",
+    "angular-schema-form-material": "fijimunkii/angular-schema-form-material#fc88c52b5825423b9e45f0fcc8832b18bd659400",
+    "tipsy": "jaz303/tipsy#3545aa6ae2cfdf10f3636d2754b792524ee2bc7a",
+    "angular-messages": "1.5.5"
+  },
+  "devDependencies": {
+    "angular-mocks": "~1.4.7"
+  },
+  "resolutions": {
+    "angular": "~1.4.0",
+    "d3": "~3.5.6",
+    "angular-bootstrap": "~0.14.3",
+    "angular-material": "1.0.9"
+  },
+  "overrides": {
+    "Leaflet.fullscreen": {
+      "main": [
+        "dist/Leaflet.fullscreen.min.js"
+      ]
+    },
+    "jquery": {
+      "main": "dist/jquery.js"
+    },
+    "slick-carousel": {
+      "main": [
+        "slick/slick.css",
+        "slick/slick-theme.css",
+        "slick/slick.js",
+        "slick/fonts/*",
+        "slick/ajax-loader.gif"
+      ]
+    },
+    "angular-slick-carousel": {
+      "main": "dist/angular-slick.min.js"
+    },
+    "ag-grid": {
+      "main": "dist/ag-grid.min.js"
+    },
+    "angular-mousetrap-service": {
+      "main": "release/angular-mousetrap-service.min.js"
+    },
+    "angular-data-table": {
+      "main": [
+        "release/dataTable.helpers.min.js",
+        "release/dataTable.css",
+        "release/material.css"
+      ]
+    },
+    "clues": {
+      "main": [
+        "clues.js",
+        "util/reptiles-client.js"
+      ]
+    },
+    "bootstrap-sass": {
+      "main": [
+        "assets/stylesheets/_bootstrap.scss",
+        "assets/javascripts/bootstrap.min.js",
+        "assets/fonts/bootstrap/*"
+      ]
+    },
+    "angular-material": {
+      "main": [
+        "angular-material.js",
+        "angular-material.css"
+      ]
+    },
+    "angular-breadcrumb": {
+      "main": "angular-breadcrumb.js"
+    },
+    "outlayer": {
+      "main": [
+        "item.js",
+        "outlayer.js"
+      ]
+    },
+    "ev-emitter": {
+      "main": "ev-emitter.js"
+    },
+    "fizzy-ui-utils": {
+      "main": "utils.js"
+    },
+    "get-size": {
+      "main": "get-size.js"
+    },
+    "desandro-matches-selector": {
+      "main": "matches-selector.js"
+    },
+    "packery": {
+      "main": "dist/packery.pkgd.min.js"
+    },
+    "angular-packery": {
+      "main": "dist/packery.js"
+    },
+    "angular-schema-form": {
+      "main": [
+        "dist/schema-form.js"
+      ]
+    },
+    "angular-schema-form-material": {
+      "main": [
+        "material-decorator.js"
+      ]
+    },
+    "tipsy": {
+      "main": [
+        "src/javascripts/jquery.tipsy.js",
+        "src/stylesheets/tipsy.css"
+      ]
+    },
+    "numeral": {
+      "main": [
+        "min/numeral.min.js"
+      ]
+    }
+  }
+}
