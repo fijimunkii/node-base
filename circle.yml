@@ -1,6 +1,4 @@
 machine:
-  pre:
-    - curl -sSL https://s3.amazonaws.com/circle-downloads/install-circleci-docker.sh | bash -s -- 1.10.0
   services:
     - docker
   environment:
@@ -11,11 +9,7 @@ machine:
 dependencies:
   override:
     - docker info
-    - >
-      docker build --build-arg BUILD_DATE=`date -u +"%Y-%m-%dT%H:%M:%SZ"`
-      --build-arg VCS_URL=`git config --get remote.origin.url`
-      --build-arg VCS_REF=`git rev-parse --short HEAD`
-      -t $DOCKER_IMAGE:$DOCKER_TAG .
+    - docker build -t $DOCKER_IMAGE:$DOCKER_TAG .
 
 test:
   override:
