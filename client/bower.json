@@ -33,7 +33,7 @@
     "ngclipboard": "^1.1.0",
     "angular-mousetrap-service": "^0.1.0",
     "intro.js": "^2.0.0",
-    "ag-grid": "~5.1.2",
+    "ag-grid": "~6.3.0",
     "Leaflet.fullscreen": "Leaflet/Leaflet.fullscreen#f5e76270ad40bb573bd11595f9069c3f15f8f286",
     "angular-oboe": "*",
     "ngprogress": "1.1.3",
