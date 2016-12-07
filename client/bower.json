@@ -21,7 +21,7 @@
     "lodash": "~3.10.1",
     "moment": "~2.10.6",
     "ui-select": "angular-ui-select#~0.13.1",
-    "clues": "~3.3.11",
+    "clues": "^3.5.20",
     "d3-tip": "~0.6.7",
     "colorbrewer": "~1.0.0",
     "angular-moment": "~0.10.3",
