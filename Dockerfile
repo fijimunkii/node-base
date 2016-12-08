@@ -1,4 +1,4 @@
-FROM node:6.9.0
+FROM node:6.9.1
 MAINTAINER Harrison Powers, harrisonpowers@gmail.com
 
 RUN apt update && apt install -y libfontconfig vim nano poppler-utils \
