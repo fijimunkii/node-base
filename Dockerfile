@@ -2,6 +2,7 @@ FROM node:6.9.2
 MAINTAINER Harrison Powers, harrisonpowers@gmail.com
 
 RUN apt update && apt install -y libfontconfig vim nano poppler-utils \
+    libcairo2-dev libjpeg-dev libgif-dev \
     && rm -rf /var/lib/apt/lists/*
 
 RUN npm install pm2 -g
