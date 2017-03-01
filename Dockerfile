@@ -2,16 +2,19 @@ FROM node:6.9.2
 MAINTAINER Harrison Powers, harrisonpowers@gmail.com
 
 RUN apt update && apt install -y libfontconfig vim nano poppler-utils \
-    libcairo2-dev libjpeg-dev libgif-dev catdoc \
+    libcairo2-dev libjpeg62-turbo-dev libpango1.0-dev libgif-dev build-essential g++ \
+    catdoc \
     && rm -rf /var/lib/apt/lists/*
 
-RUN npm install pm2 -g
+RUN npm install pm2 node-gyp -g
 
 RUN mkdir -p /usr/src/app/server && \
     mkdir -p /usr/src/app/client;
 
 ADD server/package.json /usr/src/app/server/package.json
 RUN cd /usr/src/app/server && npm install
+
+RUN cd /usr/src/app/server/node_modules/canvas && node-gyp rebuild
 
 ADD client/package.json /usr/src/app/client/package.json
 ADD client/bower.json /usr/src/app/client/bower.json
