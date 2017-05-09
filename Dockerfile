@@ -3,7 +3,7 @@ MAINTAINER Harrison Powers, harrisonpowers@gmail.com
 
 RUN apt update && apt install -y libfontconfig vim nano poppler-utils \
     libcairo2-dev libjpeg62-turbo-dev libpango1.0-dev libgif-dev build-essential g++ \
-    catdoc graphviz \
+    catdoc graphviz pdftk \
     && rm -rf /var/lib/apt/lists/*
 
 RUN npm install pm2 node-gyp -g
