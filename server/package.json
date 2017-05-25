@@ -22,9 +22,9 @@
     "bluebird": "^3.1.5",
     "body-parser": "^1.13.3",
     "busboy": "^0.2.11",
-    "cache-stampede": "~0.3.0",
+    "cache-stampede": "~0.7.7",
     "cheerio": "^0.19.0",
-    "clues": "^3.5.20",
+    "clues": "^3.5.35",
     "clues-query": "~0.3.2",
     "connect-mongo": "^0.8.2",
     "cookie-parser": "^1.4.3",
@@ -37,7 +37,7 @@
     "datauri": "^1.0.4",
     "duplexer": "^0.1.1",
     "elasticsearch": "~9.0.0",
-    "etl": "~0.3.8",
+    "etl": "~0.5.0",
     "express": "^4.9.8",
     "express-session": "^1.11.3",
     "fast-csv": "^0.6.0",
@@ -50,7 +50,7 @@
     "impersonate": "^0.1.0",
     "j": "^0.4.3",
     "jade": "1.11.0",
-    "jsdom": "^3.1.2",
+    "jsdom": "^11.0.0",
     "left-pad": "^1.1.0",
     "lob": "~3.9.0",
     "mailcomposer": "2.1.0",
@@ -76,7 +76,7 @@
     "rollbar": "^0.6.2",
     "serve-index": "^1.7.2",
     "sorted-array": "^2.0.1",
-    "streamz": "~1.5.3",
+    "streamz": "~1.8.1",
     "through": "^2.3.8",
     "twilio": "^2.9.1",
     "tzdate": "^1.0.1",
@@ -85,11 +85,10 @@
     "unzipper": "^0.4.1",
     "useragent": "2.1.9",
     "validator": "4.2.1",
-    "xml2json": "^0.9.0"
+    "xml2json": "~0.11.0"
   },
   "devDependencies": {
     "chai": "^3.3.0",
-    "node-inspector": "^0.12.3",
     "nodemon": "^1.7.1"
   }
 }
