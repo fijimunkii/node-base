@@ -1,7 +1,7 @@
 FROM node:7.10.0
 MAINTAINER Harrison Powers, harrisonpowers@gmail.com
 
-RUN apt update && apt install -y libfontconfig vim nano poppler-utils \
+RUN apt update && apt install -y jq libfontconfig vim nano poppler-utils \
     libcairo2-dev libjpeg62-turbo-dev libpango1.0-dev libgif-dev build-essential g++ \
     catdoc graphviz pdftk \
     && rm -rf /var/lib/apt/lists/*
