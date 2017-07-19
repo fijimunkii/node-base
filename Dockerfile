@@ -4,7 +4,10 @@ MAINTAINER Harrison Powers, harrisonpowers@gmail.com
 RUN apt update && apt install -y jq libfontconfig vim nano poppler-utils \
     libcairo2-dev libjpeg62-turbo-dev libpango1.0-dev libgif-dev build-essential g++ \
     catdoc graphviz pdftk \
+    libpython-dev python-pip \
     && rm -rf /var/lib/apt/lists/*
+
+RUN pip install awscli
 
 RUN npm install pm2 -g
 
