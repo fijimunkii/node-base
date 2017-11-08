@@ -1,6 +1,8 @@
 FROM node:8.9.0
 MAINTAINER Harrison Powers, harrisonpowers@gmail.com
 
+RUN npm i -g npm@5.4.2
+
 RUN apt update && apt install -y jq libfontconfig vim nano poppler-utils \
     libcairo2-dev libjpeg62-turbo-dev libpango1.0-dev libgif-dev build-essential g++ \
     catdoc graphviz pdftk \
