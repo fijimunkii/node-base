@@ -23,7 +23,7 @@ ADD client/package.json /usr/src/app/client/package.json
 ADD client/bower.json /usr/src/app/client/bower.json
 RUN cd /usr/src/app/client && npm install && npm run postinstall
 
-ADD https://github.com/Yelp/dumb-init/releases/download/v1.1.3/dumb-init_1.1.3_amd64 /usr/local/bin/dumb-init
+RUN wget -O /usr/local/bin/dumb-init https://github.com/Yelp/dumb-init/releases/download/v1.2.0/dumb-init_1.2.0_amd64
 RUN chmod +x /usr/local/bin/dumb-init
 
 WORKDIR /usr/src/app
