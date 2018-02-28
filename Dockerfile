@@ -27,7 +27,7 @@ RUN chmod +x /usr/local/bin/dumb-init
 # Add docker user (so we dont run as root)
 RUN groupadd -r docker && useradd -r -g docker docker \
     && usermod -d /usr/src/app docker \
-    && mkdir -p /root/.{npm,pm2} \
+    && mkdir -p /root/.npm && mkdir -p /root/.pm2 \
     && chown -R docker:docker /usr/src/app /root/.npm /root/.pm2 \
     && printf "docker\ndocker\n" | passwd docker
 
