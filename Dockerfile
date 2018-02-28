@@ -27,11 +27,9 @@ RUN chmod +x /usr/local/bin/dumb-init
 # Add docker user (so we dont run as root)
 RUN groupadd -r docker && useradd -r -g docker docker \
     && usermod -d /usr/src/app docker \
-    && chown -R docker:docker /usr/src/app \
+    && mkdir -p /root/.{npm,pm2} \
+    && chown -R docker:docker /usr/src/app /root/.npm /root/.pm2 \
     && printf "docker\ndocker\n" | passwd docker
-
-# fix permissions wtf
-RUN chown -R docker:docker /root/.pm2 /root/.npm
 
 # Install pm2 as docker user
 RUN su -c "npm i -g pm2" -m docker
