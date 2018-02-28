@@ -30,6 +30,9 @@ RUN groupadd -r docker && useradd -r -g docker docker \
     && chown -R docker:docker /usr/src/app \
     && printf "docker\ndocker\n" | passwd docker
 
+# fix permissions wtf
+RUN chown -R docker:docker /root/.pm2 /root/.npm
+
 # Install pm2 as docker user
 RUN su -c "npm i -g pm2" -m docker
 
