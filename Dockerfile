@@ -19,9 +19,9 @@ RUN npm i -g npm@5.4.2 \
   && echo 'nohup sh -c "google-chrome --headless --hide-scrollbars --remote-debugging-port=9222 --disable-gpu" > /dev/null &' > /home/chrome/start-chrome.sh \
   && apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* \
   && pip install awscli \
-  && mkdir -p /usr/src/app/{client,server/modules} \
+  && mkdir -p /usr/src/app/{client,server/modules}
 
-ADD server/package.json /usr/src/app/server/package.json
+ADD server/package.json /usr/src/app/server/
 ADD client/package.json client/bower.json /usr/src/app/client/
 RUN cd /usr/src/app/client && npm install && npm run postinstall \
   && cd /usr/src/app/server && npm install
