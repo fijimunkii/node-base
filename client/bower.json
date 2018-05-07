@@ -15,10 +15,12 @@
     "angular-sanitize": "1.6.4",
     "animate.css": "~3.3.0",
     "components-font-awesome": "~4.7.0",
+    "codemirror": "~5.33.0",
     "d3": "~3.5.6",
     "json-editor": "~0.7.23",
+    "json5": "0.5.0",
     "moment": "~2.10.6",
-    "clues": "^3.5.33",
+    "clues": "^3.5.45",
     "d3-tip": "~0.6.7",
     "d3-plugins": "*",
     "colorbrewer": "~1.0.0",
@@ -52,7 +54,8 @@
     "event-source-polyfill": "^0.0.9",
     "chart.js": "^2.6.0",
     "angular-bootstrap-contextmenu": "^0.9.9",
-    "angular-bootstrap-lightbox": "^0.12.0"
+    "angular-bootstrap-lightbox": "^0.12.0",
+    "angular-all-ordinal": "^1.0.1"
   },
   "resolutions": {
     "angular": "1.6.4",
@@ -68,6 +71,20 @@
       "main": [
         "css/font-awesome.css",
         "fonts/*"
+      ]
+    },
+    "codemirror": {
+      "main": [
+        "lib/codemirror.js",
+        "lib/codemirror.css",
+        "mode/javascript/javascript.js",
+        "theme/monokai.css",
+        "keymap/sublime.js",
+        "addon/scroll/simplescrollbars.js",
+        "addon/scroll/simplescrollbars.css",
+        "addon/search/search.js",
+        "addon/search/searchcursor.js",
+        "addon/edit/closebrackets.js"
       ]
     },
     "moment": {
@@ -91,8 +108,7 @@
     },
     "clues": {
       "main": [
-        "clues.js",
-        "util/reptiles-client.js"
+        "clues.js"
       ]
     },
     "bootstrap-sass": {
