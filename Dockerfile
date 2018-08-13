@@ -1,4 +1,4 @@
-FROM node:8.9.0
+FROM node:8.11.3
 MAINTAINER Harrison Powers, harrisonpowers@gmail.com
 
 RUN apt update && apt install -y jq libfontconfig vim nano poppler-utils \
