@@ -5,7 +5,10 @@ RUN apt update && apt install -y jq libfontconfig vim nano poppler-utils \
     libcairo2-dev libjpeg62-turbo-dev libpango1.0-dev libgif-dev build-essential g++ \
     catdoc graphviz pdftk \
     libpython-dev python-pip \
+    haxe \
     && rm -rf /var/lib/apt/lists/*
+
+RUN mkdir ~/haxelib && haxelib setup ~/haxelib
 
 RUN pip install awscli
 
