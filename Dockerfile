@@ -1,7 +1,7 @@
 FROM node:10.9.0-stretch
 MAINTAINER Harrison Powers, harrisonpowers@gmail.com
 
-RUN apt update && apt install -y jq libfontconfig vim nano poppler-utils \
+RUN apt update && apt install -y jq libfontconfig vim nano poppler-utils net-tools \
     libcairo2-dev libjpeg62-turbo-dev libpango1.0-dev libgif-dev build-essential g++ \
     catdoc graphviz pdftk \
     libpython-dev python-pip \
