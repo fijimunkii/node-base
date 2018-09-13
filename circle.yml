@@ -4,7 +4,7 @@ machine:
   environment:
     DOCKER_IMAGE: $CIRCLE_PROJECT_USERNAME/$CIRCLE_PROJECT_REPONAME
     DOCKER_TAG: $CIRCLE_SHA1
-    NODE_VERSION: 10.9.0-haxe2
+    NODE_VERSION: 10.9.0-haxe3
 
 dependencies:
   override:
