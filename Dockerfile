@@ -1,4 +1,8 @@
-FROM node:10.15.0-stretch
+# pull from checksum to ensure it never changes
+# docker image ls --digests --format '{{.Digest}}'
+# node:10.15.0-stretch
+FROM node@sha256:cdca9751c481ae77f2f57bf8a7337c378a144af45310f7d2711d265f5ac9ef15
+
 MAINTAINER Harrison Powers, harrisonpowers@gmail.com
 
 RUN apt update && apt install -y jq libfontconfig vim nano poppler-utils net-tools \
