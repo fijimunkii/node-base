@@ -1,4 +1,4 @@
-FROM node:10.16.0-stretch
+FROM node:10.16.1-stretch
 MAINTAINER Harrison Powers, harrisonpowers@gmail.com
 
 RUN apt update && apt install -y jq libfontconfig vim nano poppler-utils net-tools \

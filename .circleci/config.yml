@@ -10,7 +10,7 @@ jobs:
       - run: |
           DOCKER_IMAGE="$CIRCLE_PROJECT_USERNAME/$CIRCLE_PROJECT_REPONAME"
           DOCKER_TAG="$CIRCLE_SHA1"
-          NODE_VERSION="10.16.0"
+          NODE_VERSION="10.16.1"
           docker info
           docker build -t $DOCKER_IMAGE:$DOCKER_TAG .
           if [ "$CIRCLE_BRANCH" = "master" ]; then
