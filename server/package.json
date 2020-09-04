@@ -70,7 +70,7 @@
     "mime-types": "^2.1.15",
     "moment": "^2.14.0",
     "mongo-oplog": "^2.1.0",
-    "mongodb": "~2.2.5",
+    "mongodb": "~3.6.1",
     "morgan": "^1.6.1",
     "mysql": "^2.10.2",
     "nconf": "^0.7.2",
